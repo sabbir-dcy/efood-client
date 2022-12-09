@@ -27,17 +27,16 @@ function Navbar({ children }) {
       </div>
 
       <div className={`${!menu && 'hidden'} h-full backdrop-blur-2xl w-full fixed top-14 md:hidden z-20`}>
-        <div className='flex flex-col items-center gap-y-8 mt-20 font-medium'>
+        <div className='flex flex-col items-center gap-y-8 mt-20 font-medium' onClick={() => setMenu(false)}>
           <Link to={'/'}>Home</Link>
           <Link to={'/cart'}>Cart</Link>
           <Link to={'/review'}>Reviews</Link>
           <Link to={'/about'}>About</Link>
           <Link to={'/account'}>Login</Link>
         </div>
-
       </div>
 
-      <div className='w-4/5 mx-auto'>
+      <div className='w-4/5 mx-auto mt-14'>
         {children}
       </div>
 

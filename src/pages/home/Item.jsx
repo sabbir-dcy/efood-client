@@ -3,7 +3,7 @@ import React from 'react'
 function Item({ item }) {
   const { name, price, img, ingredients, details, _id } = item
   return (
-    <div className='rounded-lg max-w-sm overflow-hidden shadow-md shadow-zinc-200 hover:shadow-lg hover:scale-105 transition-all'>
+    <div className='rounded-lg max-w-sm overflow-hidden shadow-md shadow-zinc-200 hover:shadow-lg hover:scale-105 transition-all duration-300'>
       <div>
         <img className='object-cover h-48 w-full' src={img} alt="item" />
         <div className='px-10 py-5 space-y-2'>
